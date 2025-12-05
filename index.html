@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Clicker Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Clicker Game</h1>
+
+    <section class="status">
+      <div class="counter">
+        <div id="count" class="count">0</div>
+        <div class="meta">
+          <span id="perClick">Per Click: 1</span>
+          <span id="cps">CPS: 0</span>
+        </div>
+      </div>
+      <button id="bigClick" class="big-click">CLICK</button>
+    </section>
+
+    <section class="store">
+      <h2>Upgrades</h2>
+      <div id="upgrades" class="upgrades"></div>
+    </section>
+
+    <section class="actions">
+      <button id="reset">Reset</button>
+      <button id="saveNow">Save Now</button>
+      <label class="autosave">
+        <input id="autosaveToggle" type="checkbox" checked />
+        Auto-save every 15s
+      </label>
+    </section>
+
+    <section class="footer">
+      <small>
+        Tips: Press SPACE to click. Numbers are abbreviated (K/M/B). Your progress is stored in localStorage.
+      </small>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
